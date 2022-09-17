@@ -1,0 +1,146 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    line-height: 1.9;
+}
+
+.tm-logo {
+    margin-right: 20px;
+}
+
+.tm-slogan {
+    font-size: 0.8rem;
+}
+
+.navbar-toggler {
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 0;
+    transform: skewX(-15deg);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.navbar-toggler i {
+    transform: skewX(15deg);
+}
+
+.navbar-expand-lg {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .tm-nav-link {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.nav-item {
+    margin-right: 60px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item.active .tm-nav-link,
+.nav-item:hover .tm-nav-link {
+    color: #9CC;
+}
+
+.tm-row {
+    display: flex;
+    background-color: #2C353C;
+}
+
+.tm-col-left {
+    width: 50%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tm-col-right {
+    width: 50%;
+    height: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.tm-content {
+    max-width: 660px;
+    margin-top: 50px;
+    padding-right: 20px;
+}
+
+.tm-content-title {
+    font-size: 1.5rem;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel {
+    pointer-events: none;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+        /* filter: hue-rotate(180deg); */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        /* filter: hue-rotate(0deg); */
+    }
+}
+
+.carousel-item img {
+    object-fit: cover;
+    /* width: 100%; */
+    height: 100%;
+}
+
+.mycarousel-zoom {
+    animation: cardEntrance 2500ms ease-in-out both;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.btn-circle {
+    border-radius: 50%;
+}

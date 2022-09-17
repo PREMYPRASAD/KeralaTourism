@@ -1,0 +1,147 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    overflow-x: hidden;
+    color: white;
+    background-color: #2C353C;
+}
+
+a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    line-height: 1.9;
+}
+
+.tm-logo {
+    margin-right: 20px;
+}
+
+.tm-slogan {
+    font-size: 0.8rem;
+}
+
+
+/* navigation */
+
+.navbar-toggler {
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 0;
+    transform: skewX(-15deg);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.navbar-toggler i {
+    transform: skewX(15deg);
+}
+
+.navbar-expand-lg {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .tm-nav-link {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.nav-item {
+    margin-right: 60px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item.active .tm-nav-link,
+.nav-item:hover .tm-nav-link {
+    color: #9CC;
+}
+
+.tm-row {
+    display: flex;
+}
+
+.tm-col-left {
+    width: 50%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tm-col-right {
+    width: 50%;
+    height: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.tm-content {
+    max-width: 660px;
+    margin-top: 50px;
+    padding-right: 20px;
+}
+
+.tm-content-title {
+    font-size: 1.5rem;
+}
+
+.roundCardImage {
+    vertical-align: middle;
+    border-radius: 50% !important;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+}
+
+.card img {
+    /* width: 13rem; */
+    height: 12rem;
+    object-fit: cover;
+}
+
+.myAnimation {
+    animation: cardEntrance 500ms ease-in-out both;
+}
+
+.card:hover {
+    transform: scale(1.1) !important;
+}
+
+
+/* .bgColorBody {
+    background-color:;
+} */
