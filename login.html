@@ -14,6 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="destination.css">
     <link rel="stylesheet" href="Destination/district.css">
 
 
@@ -69,66 +70,66 @@
                         <form class="row g-3 mt-4" action="index.html" onsubmit="return validate()">
                             <div class="col-12">
                                 <label for="inputEmail" class="form-label">Email</label>
-                                <input type="type" class="form-control rounded-3" id="inputEmail" pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,3})" onkeyup="validemail();" required />
-
-                                <div class="col-12 ">
+                                <input type="type" class="form-control rounded-3" id="inputEmail" pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,3})" onkeyup="validemail();" required>
+                            </div>
+                            <div class="col-12 ">
+                                <p class="h6 text-danger">
                                     <label for="error" id="error"></label>
+                                </p>
+                            </div>
+                            <!-- END OF EMAIL INPUT -->
 
-                                </div>
-                                <!-- END OF EMAIL INPUT -->
-
-                                <div class="col-12 mb-3">
-                                    <div class="d-flex justify-content-between">
-                                        <label for="inputPassword" class="form-label">Password</label>
-                                        <a href="#" target="_blank" class="text-decoration-none">
+                            <div class="col-12 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <label for="inputPassword" class="form-label">Password</label>
+                                    <a href="#" target="_blank" class="text-decoration-none">
                     Forgot Password?</a>
-                                    </div>
-
-                                    <input type="password" class="form-control col-12 rounded-3" id="inputPassword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,})" onkeyup="pass()">
-                                    <label for="error" id="pwerror"></label>
-                                    <i class="bi bi-eye-slash" id="togglePassword"></i>
                                 </div>
-                                <div class="col-12 ">
 
-                                </div>
-                                <!-- END OF PASSWORD INPUT -->
+                                <input type="password" class="form-control col-12 rounded-3" id="inputPassword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,})" onkeyup="pass()">
+                                <label for="error" id="pwerror"></label>
+                                <!-- <i class="bi bi-eye-slash" id="togglePassword"></i> -->
+                            </div>
+                            <div class="col-12 ">
 
-                                <div class="col-12 form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck" />
-                                    <label class="form-check-label" for="gridCheck">
+                            </div>
+                            <!-- END OF PASSWORD INPUT -->
+
+                            <div class="col-12 form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                <label class="form-check-label" for="gridCheck">
                   Remember me
                 </label>
-                                </div>
-                                <!-- END OF REMEMBER ME CHECK BOX -->
+                            </div>
+                            <!-- END OF REMEMBER ME CHECK BOX -->
 
-                                <div class="col-10 mb-4 mx-auto">
-                                    <button type="submit" class="btn btn-success mx-auto w-100 rounded-pill" onclick="validate()">
+                            <div class="col-10 mb-4 mx-auto">
+                                <button type="submit" class="btn btn-success mx-auto w-100 rounded-pill" onclick="validate()">
                   Sign in
                 </button>
-                                </div>
-                                <!-- END OF SUBMIT BUTTON -->
+                            </div>
+                            <!-- END OF SUBMIT BUTTON -->
                         </form>
                         <!-- END OF FORM -->
-                        </div>
-                        <!-- END OF COLUMN TEXT -->
                     </div>
-                    <!-- END OF SIGN IN ROW -->
+                    <!-- END OF COLUMN TEXT -->
+                </div>
+                <!-- END OF SIGN IN ROW -->
 
-                    <div class="row text-center mb-5 p-3 bgcolorBlue rounded">
-                        <p class="col-12 h6">
-                            New to Kerala Tourism Org?
-                            <a href="signup.html" class="text-decoration-none ms-2">Create an account</a
-            >.
-          </p>
-        </div>
-        <!-- END OF NEW ACCOUNT ROW -->
-  
-        <div class="row p-3 bgcolorBlue rounded">
-          <div class="col d-flex justify-content-around">
-            <a href="#" target="_blank" class="text-decoration-none">Terms</a>
-                            <a href="#" target="_blank" class="text-decoration-none">Privacy</a>
-                            <a href="#" target="_blank" class="text-decoration-none">Security</a>
-                            <a href="#" target="_blank" class="text-decoration-none text-secondary">Contact KeralaOrg</a
+                <div class="row text-center mb-5 p-3 bgcolorBlue rounded">
+                    <p class="col-12 h6">
+                        New to Kerala Tourism Org?
+                        <a href="signup.html" class="text-decoration-none ms-2">Create an account</a>
+                    </p>
+                </div>
+                <!-- END OF NEW ACCOUNT ROW -->
+
+                <div class="row p-3 bgcolorBlue rounded">
+                    <div class="col d-flex justify-content-around">
+                        <a href="#" target="_blank" class="text-decoration-none">Terms</a>
+                        <a href="#" target="_blank" class="text-decoration-none">Privacy</a>
+                        <a href="#" target="_blank" class="text-decoration-none">Security</a>
+                        <a href="#" target="_blank" class="text-decoration-none text-secondary">Contact KeralaOrg</a
             >
           </div>
         </div>
@@ -260,8 +261,8 @@
         </div>
     </div>
     </footer>
-    <!-- <script  type="text/javascript" src="js/signupvalidate.js"></script> -->
-    <script src="./js/loginvalidate.js"></script>
+
+    <script src="js/loginvalidate.js"></script>
 </body>
 
 </html>
